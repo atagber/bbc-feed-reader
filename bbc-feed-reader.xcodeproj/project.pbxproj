@@ -12,9 +12,11 @@
 		342E563E1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 342E563C1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld */; };
 		342E56401E38C3D400549A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342E563F1E38C3D400549A3B /* Assets.xcassets */; };
 		342E56431E38C3D400549A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342E56411E38C3D400549A3B /* LaunchScreen.storyboard */; };
+		88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbc_feed_reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		342E56321E38C3D400549A3B /* bbc-feed-reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbc-feed-reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		342E56351E38C3D400549A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		342E563A1E38C3D400549A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		342E563F1E38C3D400549A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		342E56421E38C3D400549A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		342E56441E38C3D400549A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.debug.xcconfig"; sourceTree = "<group>"; };
+		7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				342E56341E38C3D400549A3B /* bbc-feed-reader */,
 				342E56331E38C3D400549A3B /* Products */,
+				59800656CE881F02E99BFAF3 /* Pods */,
+				7035ADD98A1D01AC5DF8E0F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +79,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		59800656CE881F02E99BFAF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */,
+				7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7035ADD98A1D01AC5DF8E0F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 342E56471E38C3D400549A3B /* Build configuration list for PBXNativeTarget "bbc-feed-reader" */;
 			buildPhases = (
+				972D84A271B4C52F96417DC0 /* [CP] Check Pods Manifest.lock */,
 				342E562E1E38C3D400549A3B /* Sources */,
 				342E562F1E38C3D400549A3B /* Frameworks */,
 				342E56301E38C3D400549A3B /* Resources */,
+				F7F479759FE89E5D2CAB2097 /* [CP] Embed Pods Frameworks */,
+				F86021C9F7715C69755C8B76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		972D84A271B4C52F96417DC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7F479759FE89E5D2CAB2097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86021C9F7715C69755C8B76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		342E562E1E38C3D400549A3B /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		342E56481E38C3D400549A3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4H9CKVU29;
@@ -279,6 +355,7 @@
 		};
 		342E56491E38C3D400549A3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4H9CKVU29;
