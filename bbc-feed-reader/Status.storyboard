@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Status View Controller-->
+        <scene sceneID="9tw-dN-3aN">
+            <objects>
+                <viewController storyboardIdentifier="StatusViewController" id="a6P-EF-SqX" customClass="StatusViewController" customModule="bbc_feed_reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XNz-jq-qgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="sic-NM-1AH"/>
+                    </layoutGuides>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="MzO-9L-Zqm">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="krY-qA-9wA">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="166"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Status Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uur-Nl-Dde">
+                                <rect key="frame" x="0.0" y="176" width="200" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sic-NM-1AH" firstAttribute="top" secondItem="Uur-Nl-Dde" secondAttribute="bottom" id="Gxq-ob-LlY"/>
+                            <constraint firstItem="krY-qA-9wA" firstAttribute="leading" secondItem="MzO-9L-Zqm" secondAttribute="leading" id="Ob6-N3-iKy"/>
+                            <constraint firstAttribute="trailing" secondItem="krY-qA-9wA" secondAttribute="trailing" id="YVH-69-hQd"/>
+                            <constraint firstItem="krY-qA-9wA" firstAttribute="top" secondItem="XNz-jq-qgW" secondAttribute="bottom" id="a6x-tc-2p1"/>
+                            <constraint firstItem="Uur-Nl-Dde" firstAttribute="leading" secondItem="MzO-9L-Zqm" secondAttribute="leading" id="g6m-pC-OVB"/>
+                            <constraint firstItem="Uur-Nl-Dde" firstAttribute="top" secondItem="krY-qA-9wA" secondAttribute="bottom" constant="10" id="jaF-xB-YCV"/>
+                            <constraint firstAttribute="trailing" secondItem="Uur-Nl-Dde" secondAttribute="trailing" id="ndJ-pJ-Nm4"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="200"/>
+                    <connections>
+                        <outlet property="statusImageView" destination="krY-qA-9wA" id="ilY-No-uRy"/>
+                        <outlet property="statusMessageLabel" destination="Uur-Nl-Dde" id="esz-V1-xEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NN-FN-L1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268.80000000000001" y="-847.37631184407803"/>
+        </scene>
+    </scenes>
+</document>
