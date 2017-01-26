@@ -35,3 +35,9 @@ class NewsPostsListViewController: UITableViewController {
     self.viewModel.inputs.tapped(newsPost: self.dataSource.value(atIndexPath: indexPath))
   }
 }
+
+extension NewsPostsListViewController {
+  func configureWith(newsPosts: [NewsPost]) {
+    self.viewModel.inputs.configureWith(newsPosts: newsPosts)
+  }
+}
