@@ -48,7 +48,7 @@ public struct NewsPost {
     self.summary = ""
     self.publicationDate = Date()
     self.sourceURLString = ""
-    self.imageURLString = ""
+    self.imageURLString = Images.customNewsImageURL.rawValue
   }
   
   func changed(newsCategory: NewsCategory? = nil,
