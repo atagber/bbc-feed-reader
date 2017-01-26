@@ -19,9 +19,10 @@ internal protocol RootViewModelType {
 
 internal final class RootViewModel: RootViewModelType, RootViewModelInputs, RootViewModelOutputs {
   init() {
-    let defaultViewControllers: Signal<[UIViewController], NoError> = self.viewDidLoadProperty.signal.map { _ in
+    let defaultViewControllers = self.viewDidLoadProperty.signal.map { _ in
       [
         BBCNewsViewController.instantiate() as UIViewController,
+        FavoritesNewsViewController.instantiate() as UIViewController
       ]
     }
     
