@@ -19,6 +19,7 @@
 		34A057961E3A0FDB005DEB6E /* UIView+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057951E3A0FDB005DEB6E /* UIView+Binding.swift */; };
 		34A057991E3A11BF005DEB6E /* UIViewController+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057971E3A11BF005DEB6E /* UIViewController+Binding.swift */; };
 		34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057981E3A11BF005DEB6E /* UIViewController+Storyboard.swift */; };
+		34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0579B1E3A12A3005DEB6E /* Signal+Observing.swift */; };
 		88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		34A057951E3A0FDB005DEB6E /* UIView+Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Binding.swift"; sourceTree = "<group>"; };
 		34A057971E3A11BF005DEB6E /* UIViewController+Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Binding.swift"; sourceTree = "<group>"; };
 		34A057981E3A11BF005DEB6E /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		34A0579B1E3A12A3005DEB6E /* Signal+Observing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Signal+Observing.swift"; sourceTree = "<group>"; };
 		5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.debug.xcconfig"; sourceTree = "<group>"; };
 		7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 				34A057921E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift */,
 				34A057971E3A11BF005DEB6E /* UIViewController+Binding.swift */,
 				34A057981E3A11BF005DEB6E /* UIViewController+Storyboard.swift */,
+				34A0579B1E3A12A3005DEB6E /* Signal+Observing.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				342E56361E38C3D400549A3B /* AppDelegate.swift in Sources */,
 				34A057961E3A0FDB005DEB6E /* UIView+Binding.swift in Sources */,
 				34A057991E3A11BF005DEB6E /* UIViewController+Binding.swift in Sources */,
+				34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */,
 				34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
