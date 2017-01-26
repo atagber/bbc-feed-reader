@@ -20,6 +20,13 @@
 		345DA4F41E3A534600D0CA1E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F31E3A534600D0CA1E /* Images.swift */; };
 		345DA4F61E3A547E00D0CA1E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F51E3A547E00D0CA1E /* Strings.swift */; };
 		345DA4F81E3A562600D0CA1E /* UIImageView+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */; };
+		345DA4FA1E3A6ACD00D0CA1E /* NewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */; };
+		345DA4FC1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */; };
+		345DA4FE1E3A6B2700D0CA1E /* NewsPostsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4FD1E3A6B2700D0CA1E /* NewsPostsDataSource.swift */; };
+		345DA5001E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4FF1E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift */; };
+		345DA5021E3A6C0500D0CA1E /* NewsPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */; };
+		345DA5041E3A6C4900D0CA1E /* NewsPostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */; };
+		345DA5071E3A76CA00D0CA1E /* BBCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -58,6 +65,13 @@
 		345DA4F31E3A534600D0CA1E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		345DA4F51E3A547E00D0CA1E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Binding.swift"; sourceTree = "<group>"; };
+		345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsList.storyboard; sourceTree = "<group>"; };
+		345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostsListViewController.swift; sourceTree = "<group>"; };
+		345DA4FD1E3A6B2700D0CA1E /* NewsPostsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostsDataSource.swift; sourceTree = "<group>"; };
+		345DA4FF1E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostsListViewModel.swift; sourceTree = "<group>"; };
+		345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostCell.swift; sourceTree = "<group>"; };
+		345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostCellViewModel.swift; sourceTree = "<group>"; };
+		345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCNewsViewController.swift; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -149,6 +163,7 @@
 		342E564C1E38C8F300549A3B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345DA5051E3A6C4C00D0CA1E /* CellsViewModels */,
 				34A0576C1E3A0C53005DEB6E /* ControllersViewModels */,
 			);
 			name = ViewModels;
@@ -157,6 +172,7 @@
 		342E564D1E38C8F900549A3B /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				345DA4FD1E3A6B2700D0CA1E /* NewsPostsDataSource.swift */,
 			);
 			name = DataSources;
 			sourceTree = "<group>";
@@ -164,6 +180,8 @@
 		342E564E1E38C91800549A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */,
+				345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */,
 				34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */,
 			);
 			name = Controllers;
@@ -172,6 +190,7 @@
 		342E564F1E38C92000549A3B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -180,8 +199,17 @@
 			isa = PBXGroup;
 			children = (
 				342E56391E38C3D400549A3B /* Main.storyboard */,
+				345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		345DA5051E3A6C4C00D0CA1E /* CellsViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */,
+			);
+			name = CellsViewModels;
 			sourceTree = "<group>";
 		};
 		34A057621E3A0942005DEB6E /* Api */ = {
@@ -256,6 +284,7 @@
 		34A0576C1E3A0C53005DEB6E /* ControllersViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345DA4FF1E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift */,
 				34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */,
 			);
 			name = ControllersViewModels;
@@ -344,6 +373,7 @@
 				342E56431E38C3D400549A3B /* LaunchScreen.storyboard in Resources */,
 				342E56401E38C3D400549A3B /* Assets.xcassets in Resources */,
 				342E563B1E38C3D400549A3B /* Main.storyboard in Resources */,
+				345DA4FA1E3A6ACD00D0CA1E /* NewsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +437,7 @@
 				342E56361E38C3D400549A3B /* AppDelegate.swift in Sources */,
 				34A057AB1E3A168A005DEB6E /* Environment.swift in Sources */,
 				34A057B31E3A198B005DEB6E /* ServerConfig.swift in Sources */,
+				345DA5071E3A76CA00D0CA1E /* BBCNewsViewController.swift in Sources */,
 				345DA4EA1E3A1F1E00D0CA1E /* NewsPost.swift in Sources */,
 				345DA4EC1E3A1FE000D0CA1E /* ApiService.swift in Sources */,
 				34A057961E3A0FDB005DEB6E /* UIView+Binding.swift in Sources */,
@@ -418,15 +449,20 @@
 				34A057AF1E3A183D005DEB6E /* Method.swift in Sources */,
 				34A057B11E3A1880005DEB6E /* Route.swift in Sources */,
 				345DA4F11E3A261900D0CA1E /* StorageService.swift in Sources */,
+				345DA5021E3A6C0500D0CA1E /* NewsPostCell.swift in Sources */,
 				34A057B51E3A19C9005DEB6E /* Parsable.swift in Sources */,
 				34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */,
+				345DA5041E3A6C4900D0CA1E /* NewsPostCellViewModel.swift in Sources */,
 				34A057A21E3A1373005DEB6E /* Date+Format.swift in Sources */,
+				345DA4FE1E3A6B2700D0CA1E /* NewsPostsDataSource.swift in Sources */,
 				345DA4F41E3A534600D0CA1E /* Images.swift in Sources */,
+				345DA4FC1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift in Sources */,
 				34A057AA1E3A168A005DEB6E /* AppEnvironment.swift in Sources */,
 				34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
 				345DA4EE1E3A226400D0CA1E /* NewsPost+Parsable.swift in Sources */,
+				345DA5001E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift in Sources */,
 				34A057B71E3A1AF8005DEB6E /* BBCError.swift in Sources */,
 				345DA4F21E3A261900D0CA1E /* NewsPost+CoreData.swift in Sources */,
 				342E563E1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld in Sources */,

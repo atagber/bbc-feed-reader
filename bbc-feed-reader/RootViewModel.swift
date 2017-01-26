@@ -21,7 +21,7 @@ internal final class RootViewModel: RootViewModelType, RootViewModelInputs, Root
   init() {
     let defaultViewControllers: Signal<[UIViewController], NoError> = self.viewDidLoadProperty.signal.map { _ in
       [
-        // TODO: implement list of controllers
+        BBCNewsViewController.instantiate() as UIViewController,
       ]
     }
     
