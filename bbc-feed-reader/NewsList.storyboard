@@ -166,7 +166,7 @@
                                     <constraint firstAttribute="height" constant="44" id="2VB-sN-obQ"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="cQq-Za-P16" kind="embed" id="Ctf-SJ-Kuh"/>
+                                    <segue destination="cQq-Za-P16" kind="embed" identifier="NewsCategoriesViewController" id="Ctf-SJ-Kuh"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-ob-02W" userLabel="Separator">
