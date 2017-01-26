@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Categories View Controller-->
+        <scene sceneID="QBY-TV-h89">
+            <objects>
+                <collectionViewController storyboardIdentifier="NewsCategoriesViewController" id="fmt-eq-tb8" customClass="NewsCategoriesViewController" customModule="bbc_feed_reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Ygc-nU-rpP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qMA-C7-lVn">
+                            <size key="itemSize" width="185" height="46"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCategoryCell" id="Xb8-NW-yyy" customClass="NewsCategoryCell" customModule="bbc_feed_reader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-1" width="185" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="185" height="46"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyk-vl-2mf" userLabel="CategoryName">
+                                            <rect key="frame" x="0.0" y="8" width="185" height="30"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEa-o9-qta">
+                                            <rect key="frame" x="0.0" y="43" width="185" height="3"/>
+                                            <color key="backgroundColor" red="0.72549019609999998" green="0.2274509804" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="3" id="vR4-vQ-Cir"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Tyk-vl-2mf" secondAttribute="trailing" id="CtR-hc-fPT"/>
+                                    <constraint firstItem="Tyk-vl-2mf" firstAttribute="leading" secondItem="Xb8-NW-yyy" secondAttribute="leading" id="IIM-a3-tZr"/>
+                                    <constraint firstAttribute="bottom" secondItem="DEa-o9-qta" secondAttribute="bottom" id="Kfo-tz-0uF"/>
+                                    <constraint firstItem="DEa-o9-qta" firstAttribute="leading" secondItem="Xb8-NW-yyy" secondAttribute="leading" id="T00-2B-QGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="DEa-o9-qta" secondAttribute="trailing" id="ars-TT-bhl"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Tyk-vl-2mf" secondAttribute="bottom" id="f15-jA-xrO"/>
+                                    <constraint firstItem="Tyk-vl-2mf" firstAttribute="top" secondItem="Xb8-NW-yyy" secondAttribute="topMargin" id="fpt-Ko-ze3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="newsCategoryNameLabel" destination="Tyk-vl-2mf" id="dXJ-bX-ID8"/>
+                                    <outlet property="selectionIndicatorView" destination="DEa-o9-qta" id="hJ2-QP-bVE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="fmt-eq-tb8" id="TOz-h4-M5O"/>
+                            <outlet property="delegate" destination="fmt-eq-tb8" id="7OZ-Nk-WVJ"/>
+                        </connections>
+                    </collectionView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="44"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDS-hm-SYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="-340"/>
+        </scene>
+    </scenes>
+</document>
