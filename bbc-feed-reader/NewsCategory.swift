@@ -15,25 +15,25 @@ public enum NewsCategory: Int {
   public var name: String {
     switch self {
     case .topStories:
-      return "Top Stories" // TODO: localize
+      return Strings.top_stories.localized
     case .world:
-      return "World" // TODO: localize
+      return Strings.world.localized
     case .unitedKingdom:
-      return "United Kingdom" // TODO: localize
+      return Strings.united_kingdom.localized
     case .business:
-      return "Business" // TODO: localize
+      return Strings.business.localized
     case .politics:
-      return "Politics" // TODO: localize
+      return Strings.politics.localized
     case .health:
-      return "Health" // TODO: localize
+      return Strings.health.localized
     case .educationAndFamily:
-      return "Education and family" // TODO: localize
+      return Strings.education_and_family.localized
     case .scienceAndEnvironment:
-      return "Science and environment" // TODO: localize
+      return Strings.science_and_environment.localized
     case .technology:
-      return "Technology" // TODO: localize
+      return Strings.technology.localized
     case .entertainmentAndArts:
-      return "Entertainment and arts" // TODO: localize
+      return Strings.entertainment_and_arts.localized
     }
   }
 }

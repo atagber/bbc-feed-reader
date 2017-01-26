@@ -4,9 +4,9 @@ extension Date {
   func dateToStringForNewsPost() -> String {
     let calendar = Calendar.current
     if calendar.isDateInYesterday(self) {
-      return "Yesterday" // TODO: localize
+      return Strings.yesterday.localized
     } else if calendar.isDateInToday(self) {
-      return "Today" // TODO: localize
+      return Strings.today.localized
     }
     
     let formatter = DateFormatter()
