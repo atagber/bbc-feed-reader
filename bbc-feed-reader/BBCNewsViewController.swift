@@ -1,6 +1,7 @@
 import UIKit
 
 class BBCNewsViewController: UIViewController {
+  weak var categoriesViewController: NewsCategoriesViewController!
   weak var newsPostsViewController: NewsPostsListViewController!
   
   static func instantiate() -> BBCNewsViewController {
@@ -35,11 +36,21 @@ class BBCNewsViewController: UIViewController {
     }
     
     switch identifier {
+    case NewsCategoriesViewController.storyboardIdentifier:
+      self.categoriesViewController = segue.destination as! NewsCategoriesViewController
+      self.categoriesViewController.delegate = self
+      break
     case NewsPostsListViewController.storyboardIdentifier:
       self.newsPostsViewController = segue.destination as! NewsPostsListViewController
       break
     default:
       break
     }
+  }
+}
+
+extension BBCNewsViewController: NewsCategoriesViewControllerDelegate {
+  func newsCategories(viewController: NewsCategoriesViewController, selectedCategory: NewsCategory) {
+    // TODO: implement this method
   }
 }

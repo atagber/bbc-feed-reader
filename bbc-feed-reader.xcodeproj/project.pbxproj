@@ -27,6 +27,12 @@
 		345DA5021E3A6C0500D0CA1E /* NewsPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */; };
 		345DA5041E3A6C4900D0CA1E /* NewsPostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */; };
 		345DA5071E3A76CA00D0CA1E /* BBCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */; };
+		345DA50B1E3A7A6000D0CA1E /* NewsCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345DA50A1E3A7A6000D0CA1E /* NewsCategories.storyboard */; };
+		345DA50D1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA50C1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift */; };
+		345DA50F1E3A7B9D00D0CA1E /* NewsCategoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA50E1E3A7B9D00D0CA1E /* NewsCategoriesDataSource.swift */; };
+		345DA5111E3A7BC700D0CA1E /* NewsCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5101E3A7BC600D0CA1E /* NewsCategoryCell.swift */; };
+		345DA5131E3A7BEB00D0CA1E /* NewsCategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5121E3A7BEB00D0CA1E /* NewsCategoryCellViewModel.swift */; };
+		345DA5151E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5141E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -72,6 +78,12 @@
 		345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostCell.swift; sourceTree = "<group>"; };
 		345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostCellViewModel.swift; sourceTree = "<group>"; };
 		345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCNewsViewController.swift; sourceTree = "<group>"; };
+		345DA50A1E3A7A6000D0CA1E /* NewsCategories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsCategories.storyboard; sourceTree = "<group>"; };
+		345DA50C1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategoriesViewController.swift; sourceTree = "<group>"; };
+		345DA50E1E3A7B9D00D0CA1E /* NewsCategoriesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategoriesDataSource.swift; sourceTree = "<group>"; };
+		345DA5101E3A7BC600D0CA1E /* NewsCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategoryCell.swift; sourceTree = "<group>"; };
+		345DA5121E3A7BEB00D0CA1E /* NewsCategoryCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategoryCellViewModel.swift; sourceTree = "<group>"; };
+		345DA5141E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategoriesViewModel.swift; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -172,6 +184,7 @@
 		342E564D1E38C8F900549A3B /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				345DA50E1E3A7B9D00D0CA1E /* NewsCategoriesDataSource.swift */,
 				345DA4FD1E3A6B2700D0CA1E /* NewsPostsDataSource.swift */,
 			);
 			name = DataSources;
@@ -180,6 +193,7 @@
 		342E564E1E38C91800549A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				345DA50C1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift */,
 				345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */,
 				345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */,
 				34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */,
@@ -191,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				345DA5011E3A6C0500D0CA1E /* NewsPostCell.swift */,
+				345DA5101E3A7BC600D0CA1E /* NewsCategoryCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -200,6 +215,7 @@
 			children = (
 				342E56391E38C3D400549A3B /* Main.storyboard */,
 				345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */,
+				345DA50A1E3A7A6000D0CA1E /* NewsCategories.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -207,6 +223,7 @@
 		345DA5051E3A6C4C00D0CA1E /* CellsViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345DA5121E3A7BEB00D0CA1E /* NewsCategoryCellViewModel.swift */,
 				345DA5031E3A6C4900D0CA1E /* NewsPostCellViewModel.swift */,
 			);
 			name = CellsViewModels;
@@ -284,6 +301,7 @@
 		34A0576C1E3A0C53005DEB6E /* ControllersViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345DA5141E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift */,
 				345DA4FF1E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift */,
 				34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */,
 			);
@@ -370,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345DA50B1E3A7A6000D0CA1E /* NewsCategories.storyboard in Resources */,
 				342E56431E38C3D400549A3B /* LaunchScreen.storyboard in Resources */,
 				342E56401E38C3D400549A3B /* Assets.xcassets in Resources */,
 				342E563B1E38C3D400549A3B /* Main.storyboard in Resources */,
@@ -434,9 +453,12 @@
 			files = (
 				34A057941E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift in Sources */,
 				34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */,
+				345DA5151E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift in Sources */,
 				342E56361E38C3D400549A3B /* AppDelegate.swift in Sources */,
+				345DA50F1E3A7B9D00D0CA1E /* NewsCategoriesDataSource.swift in Sources */,
 				34A057AB1E3A168A005DEB6E /* Environment.swift in Sources */,
 				34A057B31E3A198B005DEB6E /* ServerConfig.swift in Sources */,
+				345DA5111E3A7BC700D0CA1E /* NewsCategoryCell.swift in Sources */,
 				345DA5071E3A76CA00D0CA1E /* BBCNewsViewController.swift in Sources */,
 				345DA4EA1E3A1F1E00D0CA1E /* NewsPost.swift in Sources */,
 				345DA4EC1E3A1FE000D0CA1E /* ApiService.swift in Sources */,
@@ -457,7 +479,9 @@
 				345DA4FE1E3A6B2700D0CA1E /* NewsPostsDataSource.swift in Sources */,
 				345DA4F41E3A534600D0CA1E /* Images.swift in Sources */,
 				345DA4FC1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift in Sources */,
+				345DA5131E3A7BEB00D0CA1E /* NewsCategoryCellViewModel.swift in Sources */,
 				34A057AA1E3A168A005DEB6E /* AppEnvironment.swift in Sources */,
+				345DA50D1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift in Sources */,
 				34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
