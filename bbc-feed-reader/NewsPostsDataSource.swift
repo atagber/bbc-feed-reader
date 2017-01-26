@@ -1,28 +1,28 @@
 import UIKit
 
 public final class NewsPostsDataSource: NSObject, UITableViewDataSource {
-    fileprivate var newsPosts: [NewsPost] = []
+  fileprivate var newsPosts: [NewsPost] = []
 
-    public func load(values: [NewsPost]) {
-        self.newsPosts = values
-    }
+  public func load(values: [NewsPost]) {
+    self.newsPosts = values
+  }
 
-    public func value(atIndexPath indexPath: IndexPath) -> NewsPost {
-        return self.newsPosts[indexPath.row]
-    }
+  public func value(atIndexPath indexPath: IndexPath) -> NewsPost {
+    return self.newsPosts[indexPath.row]
+  }
 
-    // MARK: UITableViewDataSource
+  // MARK: UITableViewDataSource
 
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NewsPostCell.defaultReusableId) as! NewsPostCell
-        let value = self.value(atIndexPath: indexPath)
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: NewsPostCell.defaultReusableId) as! NewsPostCell
+    let value = self.value(atIndexPath: indexPath)
 
-        cell.configureWith(value: value)
+    cell.configureWith(value: value)
 
-        return cell
-    }
+    return cell
+  }
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.newsPosts.count
-    }
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return self.newsPosts.count
+  }
 }

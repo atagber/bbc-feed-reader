@@ -25,8 +25,10 @@ internal final class RootViewModel: RootViewModelType, RootViewModelInputs, Root
         FavoritesNewsViewController.instantiate() as UIViewController
       ]
     }
-    
-    self.setViewControllers = defaultViewControllers.map { $0.map(UINavigationController.init(rootViewController:)) }
+
+    self.setViewControllers = defaultViewControllers.map {
+      $0.map(UINavigationController.init(rootViewController:))
+    }
   }
 
   // MARK: RootViewModelInputs
@@ -35,13 +37,17 @@ internal final class RootViewModel: RootViewModelType, RootViewModelInputs, Root
   internal func viewDidLoad() {
     self.viewDidLoadProperty.value = ()
   }
-  
+
   // MARK: RootViewModelOutputs
-  
+
   internal let setViewControllers: Signal<[UIViewController], NoError>
-  
+
   // MARK: RootViewModelType
-  
-  internal var inputs: RootViewModelInputs { return self }
-  internal var outputs: RootViewModelOutputs { return self }
+
+  internal var inputs: RootViewModelInputs {
+    return self
+  }
+  internal var outputs: RootViewModelOutputs {
+    return self
+  }
 }

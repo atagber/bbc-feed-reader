@@ -8,27 +8,27 @@ extension Date {
     } else if calendar.isDateInToday(self) {
       return Strings.today.localized
     }
-    
+
     let formatter = DateFormatter()
     formatter.dateFormat = "dd MMMM yyyy"
     return formatter.string(from: self)
   }
-  
+
   func timeToStringForNewsPost() -> String {
     let formatter = DateFormatter()
     formatter.dateFormat = "HH:mm"
     return formatter.string(from: self)
   }
-  
+
   static func parseApiDate(from string: String?) -> Date? {
     guard let string = string else {
       return nil
     }
-    
+
     let formatter = DateFormatter()
     formatter.dateFormat = "EEE, d MMM yyyy HH:mm:ss zzz"
     formatter.locale = Locale(identifier: "en_US")
-    
+
     return formatter.date(from: string)
   }
 }

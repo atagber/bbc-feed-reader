@@ -8,7 +8,7 @@ public enum Status {
   case empty
   case fetching
   case none
-  
+
   var image: UIImage? {
     switch self {
     case .empty:
@@ -21,7 +21,7 @@ public enum Status {
       return nil
     }
   }
-  
+
   var message: String? {
     switch self {
     case .empty:
@@ -38,6 +38,7 @@ public enum Status {
 
 protocol StatusViewModelInputs {
   func configureWith(status: Status)
+
   func viewDidLoad()
 }
 
@@ -53,12 +54,19 @@ protocol StatusViewModelType {
 }
 
 class StatusViewModel: StatusViewModelType, StatusViewModelInputs, StatusViewModelOutputs {
-  
+
   init() {
-    let status = Signal.combineLatest(self.configureWithStatusProperty.signal, self.viewDidLoadProperty.signal).map { status, _ in status }.skipNil()
-    
-    self.statusImage = status.map { $0.image }
-    self.statusMessage = status.map { $0.message }
+    let status = Signal.combineLatest(self.configureWithStatusProperty.signal,
+                                      self.viewDidLoadProperty.signal).map { status, _ in
+      status
+    }.skipNil()
+
+    self.statusImage = status.map {
+      $0.image
+    }
+    self.statusMessage = status.map {
+      $0.message
+    }
     self.statusViewHidden = status.map {
       switch $0 {
       case .none: return true
@@ -66,9 +74,9 @@ class StatusViewModel: StatusViewModelType, StatusViewModelInputs, StatusViewMod
       }
     }
   }
-  
+
   // MARK: StatusViewModelInputs
-  
+
   fileprivate let configureWithStatusProperty = MutableProperty<Status?>(.none)
   public func configureWith(status: Status) {
     self.configureWithStatusProperty.value = status
@@ -77,15 +85,19 @@ class StatusViewModel: StatusViewModelType, StatusViewModelInputs, StatusViewMod
   public func viewDidLoad() {
     self.viewDidLoadProperty.value = ()
   }
-  
+
   // MARK: StatusViewModelOutputs
-  
+
   public let statusImage: Signal<UIImage?, NoError>
   public let statusMessage: Signal<String?, NoError>
   public let statusViewHidden: Signal<Bool, NoError>
-  
+
   // MARK: StatusViewModelType
-  
-  public var inputs: StatusViewModelInputs { return self }
-  public var outputs: StatusViewModelOutputs { return self }
+
+  public var inputs: StatusViewModelInputs {
+    return self
+  }
+  public var outputs: StatusViewModelOutputs {
+    return self
+  }
 }

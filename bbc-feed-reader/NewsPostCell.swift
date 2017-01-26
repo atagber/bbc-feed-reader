@@ -4,7 +4,7 @@ import SDWebImage
 
 class NewsPostCell: UITableViewCell {
   fileprivate let viewModel: NewsPostCellViewModelType = NewsPostCellViewModel()
-  
+
   @IBOutlet fileprivate weak var contentContainerView: UIView!
   @IBOutlet fileprivate weak var newsPostImageView: UIImageView!
   @IBOutlet fileprivate weak var newsPostTitleLabel: UILabel!
@@ -12,7 +12,7 @@ class NewsPostCell: UITableViewCell {
   @IBOutlet fileprivate weak var newsPostPublicationDateLabel: UILabel!
   @IBOutlet fileprivate weak var newsPostPublicationTimeLabel: UILabel!
   @IBOutlet fileprivate weak var newsPostFavoriteImageView: UIImageView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -20,10 +20,10 @@ class NewsPostCell: UITableViewCell {
     self.contentContainerView.layer.shadowRadius = 3
     self.contentContainerView.layer.shadowOpacity = 0.5
   }
-  
+
   internal override func bindViewModel() {
     super.bindViewModel()
-    
+
     self.newsPostTitleLabel.reactive.text <~ self.viewModel.outputs.titleLabelText
     self.newsPostSummaryLabel.reactive.text <~ self.viewModel.outputs.summaryLabelText
     self.newsPostPublicationDateLabel.reactive.text <~ self.viewModel.outputs.dateLabelText
@@ -31,10 +31,10 @@ class NewsPostCell: UITableViewCell {
     self.newsPostFavoriteImageView.reactive.isHidden <~ self.viewModel.outputs.favoriteIconHidden
     self.newsPostImageView.bind(signal: self.viewModel.outputs.imageURL, placeholder: Images.defaultPlaceholder.image)
   }
-  
+
   internal func configureWith(value: NewsPost) {
     self.viewModel.inputs.configureWith(newsPost: value)
   }
-  
+
   internal static let estimatedRowHeight = 440.0
 }

@@ -5,7 +5,7 @@ extension UIView {
     super.awakeFromNib()
     self.bindViewModel()
   }
-  
+
   open func bindViewModel() {
   }
 }

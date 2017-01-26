@@ -3,8 +3,9 @@ import Foundation
 /**
  A list of possible requests
  */
+
 internal enum Route {
-  
+
   // RSS
   case rssTopStories
   case rssWorld
@@ -16,8 +17,8 @@ internal enum Route {
   case rssScienceAndEnvironment
   case rssTechnology
   case rssEntertainmentAndArts
-  
-  internal var requestProperties: (method: Method, path: String, params: [String:Any]) {
+
+  internal var requestProperties: (method: Method, path: String, params: [String: Any]) {
     switch self {
     case .rssTopStories:
       return (.GET, "/news/rss.xml", [:])

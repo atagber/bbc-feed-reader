@@ -7,7 +7,7 @@ extension String {
     }
     return string.isEmpty
   }
-  
+
   static func trim(_ string: String?) -> String? {
     guard let string = string else {
       return nil

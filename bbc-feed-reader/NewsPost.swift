@@ -36,7 +36,7 @@ public struct NewsPost {
     self.sourceURLString = sourceURLString
     self.imageURLString = imageURLString
   }
-  
+
   init(customForCategory newsCategory: NewsCategory) {
     self.newsCategory = newsCategory
     self.identifier = UUID().uuidString
@@ -50,7 +50,7 @@ public struct NewsPost {
     self.sourceURLString = ""
     self.imageURLString = Images.customNewsImageURL.rawValue
   }
-  
+
   func changed(newsCategory: NewsCategory? = nil,
                identifier: String? = nil,
                isFavorite: Bool? = nil,
@@ -63,15 +63,15 @@ public struct NewsPost {
                summary: String? = nil,
                title: String? = nil) -> NewsPost {
     return NewsPost(newsCategory: newsCategory ?? self.newsCategory,
-                         identifier: identifier ?? self.identifier,
-                         isFavorite: isFavorite ?? self.isFavorite,
-                         isChanged: isChanged ?? self.isChanged,
-                         isRemoved: isRemoved ?? self.isRemoved,
-                         isCustom: isCustom ?? self.isCustom,
-                         publicationDate: publicationDate ?? self.publicationDate,
-                         imageURLString: imageURLString ?? self.imageURLString,
-                         sourceURLString: sourceURLString ?? self.sourceURLString,
-                         summary: summary ?? self.summary,
-                         title: title ?? self.title)
+                    identifier: identifier ?? self.identifier,
+                    isFavorite: isFavorite ?? self.isFavorite,
+                    isChanged: isChanged ?? self.isChanged,
+                    isRemoved: isRemoved ?? self.isRemoved,
+                    isCustom: isCustom ?? self.isCustom,
+                    publicationDate: publicationDate ?? self.publicationDate,
+                    imageURLString: imageURLString ?? self.imageURLString,
+                    sourceURLString: sourceURLString ?? self.sourceURLString,
+                    summary: summary ?? self.summary,
+                    title: title ?? self.title)
   }
 }

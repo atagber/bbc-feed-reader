@@ -2,7 +2,7 @@ import Foundation
 
 internal protocol Parsable {
   associatedtype ParsedType = Self
-  
+
   static func parse(_ data: Data) -> Parsed<[Self]>
 }
 
@@ -18,7 +18,7 @@ public extension Parsed {
     case .failure: return .none
     }
   }
-  
+
   var error: BBCError? {
     switch self {
     case .success: return .none

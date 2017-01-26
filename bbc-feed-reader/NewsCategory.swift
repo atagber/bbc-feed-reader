@@ -11,7 +11,7 @@ public enum NewsCategory: Int {
   case scienceAndEnvironment
   case technology
   case entertainmentAndArts
-  
+
   public var name: String {
     switch self {
     case .topStories:
@@ -36,7 +36,7 @@ public enum NewsCategory: Int {
       return Strings.entertainment_and_arts.localized
     }
   }
-  
+
   public static let allCategories: [NewsCategory] =
     [.topStories, .world, .unitedKingdom, .business, .politics, .health,
      .educationAndFamily, .scienceAndEnvironment, .technology, .entertainmentAndArts]

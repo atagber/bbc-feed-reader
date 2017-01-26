@@ -2,7 +2,7 @@ import Foundation
 
 public struct BBCError {
   let code: BBCErrorCode
-  
+
   public enum BBCErrorCode: String {
     case parsingFailed
     case databaseSavingFailed
