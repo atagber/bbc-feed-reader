@@ -42,6 +42,8 @@
 		345DA5231E3A905600D0CA1E /* NewsPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5221E3A905600D0CA1E /* NewsPostViewModel.swift */; };
 		345DA5251E3A90BB00D0CA1E /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5241E3A90BB00D0CA1E /* String+Validation.swift */; };
 		345DA5271E3A933B00D0CA1E /* UIAlertController+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5261E3A933B00D0CA1E /* UIAlertController+Builders.swift */; };
+		345DA52D1E3A992D00D0CA1E /* FavoritesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA52C1E3A992D00D0CA1E /* FavoritesNewsViewController.swift */; };
+		345DA52F1E3A994000D0CA1E /* FavoritesNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA52E1E3A994000D0CA1E /* FavoritesNewsViewModel.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -102,6 +104,8 @@
 		345DA5221E3A905600D0CA1E /* NewsPostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostViewModel.swift; sourceTree = "<group>"; };
 		345DA5241E3A90BB00D0CA1E /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		345DA5261E3A933B00D0CA1E /* UIAlertController+Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builders.swift"; sourceTree = "<group>"; };
+		345DA52C1E3A992D00D0CA1E /* FavoritesNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewController.swift; sourceTree = "<group>"; };
+		345DA52E1E3A994000D0CA1E /* FavoritesNewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewModel.swift; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 		342E564E1E38C91800549A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				345DA52C1E3A992D00D0CA1E /* FavoritesNewsViewController.swift */,
 				345DA51E1E3A8DCB00D0CA1E /* NewsPostViewController.swift */,
 				345DA50C1E3A7B2400D0CA1E /* NewsCategoriesViewController.swift */,
 				345DA5061E3A76CA00D0CA1E /* BBCNewsViewController.swift */,
@@ -325,6 +330,7 @@
 		34A0576C1E3A0C53005DEB6E /* ControllersViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345DA52E1E3A994000D0CA1E /* FavoritesNewsViewModel.swift */,
 				345DA5141E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift */,
 				345DA4FF1E3A6B3F00D0CA1E /* NewsPostsListViewModel.swift */,
 				345DA5221E3A905600D0CA1E /* NewsPostViewModel.swift */,
@@ -481,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A057941E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift in Sources */,
+				345DA52D1E3A992D00D0CA1E /* FavoritesNewsViewController.swift in Sources */,
 				345DA5171E3A81AC00D0CA1E /* BBCNewsViewModel.swift in Sources */,
 				34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */,
 				345DA5151E3A7F2500D0CA1E /* NewsCategoriesViewModel.swift in Sources */,
@@ -498,6 +505,7 @@
 				34A057A71E3A1619005DEB6E /* Storyboard.swift in Sources */,
 				345DA4F81E3A562600D0CA1E /* UIImageView+Binding.swift in Sources */,
 				345DA4F61E3A547E00D0CA1E /* Strings.swift in Sources */,
+				345DA52F1E3A994000D0CA1E /* FavoritesNewsViewModel.swift in Sources */,
 				345DA5271E3A933B00D0CA1E /* UIAlertController+Builders.swift in Sources */,
 				34A057991E3A11BF005DEB6E /* UIViewController+Binding.swift in Sources */,
 				34A057AF1E3A183D005DEB6E /* Method.swift in Sources */,
