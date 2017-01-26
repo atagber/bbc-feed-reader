@@ -61,8 +61,14 @@
 		342E56341E38C3D400549A3B /* bbc-feed-reader */ = {
 			isa = PBXGroup;
 			children = (
+				34A057621E3A0942005DEB6E /* Api */,
+				34A057641E3A0952005DEB6E /* Helpers */,
+				34A057651E3A095C005DEB6E /* Storage */,
+				34A057631E3A094A005DEB6E /* Library */,
+				342E564D1E38C8F900549A3B /* DataSources */,
+				342E564C1E38C8F300549A3B /* ViewModels */,
+				342E564B1E38C8ED00549A3B /* Views */,
 				342E564A1E38C3FA00549A3B /* Supporting Files */,
-				342E56391E38C3D400549A3B /* Main.storyboard */,
 			);
 			path = "bbc-feed-reader";
 			sourceTree = "<group>";
@@ -77,6 +83,96 @@
 				342E56351E38C3D400549A3B /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		342E564B1E38C8ED00549A3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				342E56501E38C92800549A3B /* Storyboards */,
+				342E564F1E38C92000549A3B /* Cells */,
+				342E564E1E38C91800549A3B /* Controllers */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		342E564C1E38C8F300549A3B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		342E564D1E38C8F900549A3B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		342E564E1E38C91800549A3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		342E564F1E38C92000549A3B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		342E56501E38C92800549A3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				342E56391E38C3D400549A3B /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		34A057621E3A0942005DEB6E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				34A057671E3A097A005DEB6E /* Models */,
+				34A057661E3A0973005DEB6E /* Parsers */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		34A057631E3A094A005DEB6E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		34A057641E3A0952005DEB6E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		34A057651E3A095C005DEB6E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		34A057661E3A0973005DEB6E /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		34A057671E3A097A005DEB6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		59800656CE881F02E99BFAF3 /* Pods */ = {
@@ -387,6 +483,7 @@
 				342E56491E38C3D400549A3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
