@@ -28,6 +28,7 @@
 		34A057AF1E3A183D005DEB6E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057AE1E3A183D005DEB6E /* Method.swift */; };
 		34A057B11E3A1880005DEB6E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057B01E3A1880005DEB6E /* Route.swift */; };
 		34A057B31E3A198B005DEB6E /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057B21E3A198B005DEB6E /* ServerConfig.swift */; };
+		34A057B71E3A1AF8005DEB6E /* BBCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057B61E3A1AF8005DEB6E /* BBCError.swift */; };
 		88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		34A057AE1E3A183D005DEB6E /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		34A057B01E3A1880005DEB6E /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		34A057B21E3A198B005DEB6E /* ServerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
+		34A057B61E3A1AF8005DEB6E /* BBCError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCError.swift; sourceTree = "<group>"; };
 		5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.debug.xcconfig"; sourceTree = "<group>"; };
 		7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +220,7 @@
 		34A057671E3A097A005DEB6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34A057B61E3A1AF8005DEB6E /* BBCError.swift */,
 				34A057AC1E3A174D005DEB6E /* NewsCategory.swift */,
 			);
 			name = Models;
@@ -389,6 +392,7 @@
 				34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
+				34A057B71E3A1AF8005DEB6E /* BBCError.swift in Sources */,
 				342E563E1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
