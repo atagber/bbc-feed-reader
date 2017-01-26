@@ -63,6 +63,36 @@ public class ApiService {
     return request
   }
   
+  private func request<M: Parsable>(_ route: Route) -> SignalProducer<[M], BBCError> where M == M.ParsedType {
+    
+    let request = preparedRequest(route)
+    
+    let dataProducer = self.session.reactive.data(with: request)
+      .mapError { _ in BBCError(code: .internetConnectionFailed) }
+      .flatMap(FlattenStrategy.merge) { (result: (data: Data, response: URLResponse))
+        -> SignalProducer<Data, BBCError> in
+        let httpResponse = result.response as! HTTPURLResponse
+        let code = httpResponse.statusCode
+        
+        NSLog("\(request.httpMethod ?? "") [\(request.url?.absoluteString ?? "")] -->  Response with code = \(code)")
+        
+        switch code {
+        case _ where (200..<300).contains(code):
+          return SignalProducer(value: result.data)
+        case _ where (300..<400).contains(code):
+          return SignalProducer(error: BBCError(code: .redirection))
+        case _ where (400..<500).contains(code):
+          return SignalProducer(error: BBCError(code: .clientError))
+        case _ where (500..<600).contains(code):
+          return SignalProducer(error: BBCError(code: .serverError))
+        default:
+          return SignalProducer(error: BBCError(code: .unknownError))
+        }
+    }
+    
+    return dataProducer.flatMap(.merge, transform: self.parse)
+  }
+  
   private func parse<M: Parsable>(data: Data) -> SignalProducer<[M], BBCError> where M == M.ParsedType {
     return SignalProducer<Data, NoError>(value: data).map { data in M.parse(data) }
       .flatMap(.merge) { (parsed: Parsed<[M]>) -> SignalProducer<[M], BBCError> in
