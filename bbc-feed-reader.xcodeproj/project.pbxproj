@@ -19,6 +19,7 @@
 		345DA4F21E3A261900D0CA1E /* NewsPost+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F01E3A261900D0CA1E /* NewsPost+CoreData.swift */; };
 		345DA4F41E3A534600D0CA1E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F31E3A534600D0CA1E /* Images.swift */; };
 		345DA4F61E3A547E00D0CA1E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F51E3A547E00D0CA1E /* Strings.swift */; };
+		345DA4F81E3A562600D0CA1E /* UIImageView+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -56,6 +57,7 @@
 		345DA4F01E3A261900D0CA1E /* NewsPost+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsPost+CoreData.swift"; sourceTree = "<group>"; };
 		345DA4F31E3A534600D0CA1E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		345DA4F51E3A547E00D0CA1E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Binding.swift"; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		34A057641E3A0952005DEB6E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */,
 				34A057951E3A0FDB005DEB6E /* UIView+Binding.swift */,
 				34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */,
 				34A057921E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift */,
@@ -409,6 +412,7 @@
 				34A057961E3A0FDB005DEB6E /* UIView+Binding.swift in Sources */,
 				34A057AD1E3A174D005DEB6E /* NewsCategory.swift in Sources */,
 				34A057A71E3A1619005DEB6E /* Storyboard.swift in Sources */,
+				345DA4F81E3A562600D0CA1E /* UIImageView+Binding.swift in Sources */,
 				345DA4F61E3A547E00D0CA1E /* Strings.swift in Sources */,
 				34A057991E3A11BF005DEB6E /* UIViewController+Binding.swift in Sources */,
 				34A057AF1E3A183D005DEB6E /* Method.swift in Sources */,
