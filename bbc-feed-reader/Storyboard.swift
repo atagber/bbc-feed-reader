@@ -4,6 +4,7 @@ public enum Storyboards: String {
   case Main
   case NewsList
   case Categories
+  case Status
   
   public func instantiate<VC: UIViewController>(_ viewController: VC.Type,
     inBundle bundle: Bundle? = nil) -> VC {

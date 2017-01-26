@@ -12,6 +12,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StatusViewController-->
+        <scene sceneID="47l-6x-q9l">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Status" referencedIdentifier="StatusViewController" id="CS0-Pq-02x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mO5-D7-sY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="-494"/>
+        </scene>
         <!--NewsCategoriesViewController-->
         <scene sceneID="uak-Vo-tk9">
             <objects>
@@ -176,6 +184,9 @@
                             </containerView>
                             <containerView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdD-Hb-wgP" userLabel="Status Container">
                                 <rect key="frame" x="94" y="266" width="188" height="200"/>
+                                <connections>
+                                    <segue destination="CS0-Pq-02x" kind="embed" identifier="StatusViewController" id="nGe-9B-sez"/>
+                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

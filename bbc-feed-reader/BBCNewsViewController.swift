@@ -3,6 +3,7 @@ import UIKit
 class BBCNewsViewController: UIViewController {
   weak var categoriesViewController: NewsCategoriesViewController!
   weak var newsPostsViewController: NewsPostsListViewController!
+  weak var statusViewController: StatusViewController!
   
   static func instantiate() -> BBCNewsViewController {
     let viewController = Storyboards.NewsList.instantiate(BBCNewsViewController.self)
@@ -42,6 +43,9 @@ class BBCNewsViewController: UIViewController {
       break
     case NewsPostsListViewController.storyboardIdentifier:
       self.newsPostsViewController = segue.destination as! NewsPostsListViewController
+      break
+    case StatusViewController.storyboardIdentifier:
+      self.statusViewController = segue.destination as! StatusViewController
       break
     default:
       break
