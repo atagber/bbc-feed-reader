@@ -15,6 +15,8 @@
 		345DA4EA1E3A1F1E00D0CA1E /* NewsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4E91E3A1F1E00D0CA1E /* NewsPost.swift */; };
 		345DA4EC1E3A1FE000D0CA1E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4EB1E3A1FE000D0CA1E /* ApiService.swift */; };
 		345DA4EE1E3A226400D0CA1E /* NewsPost+Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4ED1E3A226400D0CA1E /* NewsPost+Parsable.swift */; };
+		345DA4F11E3A261900D0CA1E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4EF1E3A261900D0CA1E /* StorageService.swift */; };
+		345DA4F21E3A261900D0CA1E /* NewsPost+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F01E3A261900D0CA1E /* NewsPost+CoreData.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -48,6 +50,8 @@
 		345DA4E91E3A1F1E00D0CA1E /* NewsPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPost.swift; sourceTree = "<group>"; };
 		345DA4EB1E3A1FE000D0CA1E /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		345DA4ED1E3A226400D0CA1E /* NewsPost+Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsPost+Parsable.swift"; sourceTree = "<group>"; };
+		345DA4EF1E3A261900D0CA1E /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		345DA4F01E3A261900D0CA1E /* NewsPost+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsPost+CoreData.swift"; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -118,7 +122,6 @@
 		342E564A1E38C3FA00549A3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				342E563C1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld */,
 				342E56441E38C3D400549A3B /* Info.plist */,
 				342E56411E38C3D400549A3B /* LaunchScreen.storyboard */,
 				342E563F1E38C3D400549A3B /* Assets.xcassets */,
@@ -216,6 +219,9 @@
 		34A057651E3A095C005DEB6E /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				342E563C1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld */,
+				345DA4EF1E3A261900D0CA1E /* StorageService.swift */,
+				345DA4F01E3A261900D0CA1E /* NewsPost+CoreData.swift */,
 			);
 			name = Storage;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				34A057991E3A11BF005DEB6E /* UIViewController+Binding.swift in Sources */,
 				34A057AF1E3A183D005DEB6E /* Method.swift in Sources */,
 				34A057B11E3A1880005DEB6E /* Route.swift in Sources */,
+				345DA4F11E3A261900D0CA1E /* StorageService.swift in Sources */,
 				34A057B51E3A19C9005DEB6E /* Parsable.swift in Sources */,
 				34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */,
 				34A057A21E3A1373005DEB6E /* Date+Format.swift in Sources */,
@@ -409,6 +416,7 @@
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
 				345DA4EE1E3A226400D0CA1E /* NewsPost+Parsable.swift in Sources */,
 				34A057B71E3A1AF8005DEB6E /* BBCError.swift in Sources */,
+				345DA4F21E3A261900D0CA1E /* NewsPost+CoreData.swift in Sources */,
 				342E563E1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
