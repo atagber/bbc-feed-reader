@@ -44,6 +44,7 @@
 		345DA5271E3A933B00D0CA1E /* UIAlertController+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5261E3A933B00D0CA1E /* UIAlertController+Builders.swift */; };
 		345DA52D1E3A992D00D0CA1E /* FavoritesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA52C1E3A992D00D0CA1E /* FavoritesNewsViewController.swift */; };
 		345DA52F1E3A994000D0CA1E /* FavoritesNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA52E1E3A994000D0CA1E /* FavoritesNewsViewModel.swift */; };
+		345DA5311E3AA14C00D0CA1E /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA5301E3AA14C00D0CA1E /* Secrets.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -106,6 +107,7 @@
 		345DA5261E3A933B00D0CA1E /* UIAlertController+Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builders.swift"; sourceTree = "<group>"; };
 		345DA52C1E3A992D00D0CA1E /* FavoritesNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewController.swift; sourceTree = "<group>"; };
 		345DA52E1E3A994000D0CA1E /* FavoritesNewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewModel.swift; sourceTree = "<group>"; };
+		345DA5301E3AA14C00D0CA1E /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				34A057A61E3A1619005DEB6E /* Storyboards.swift */,
 				34A057A81E3A168A005DEB6E /* AppEnvironment.swift */,
 				34A057A91E3A168A005DEB6E /* Environment.swift */,
+				345DA5301E3AA14C00D0CA1E /* Secrets.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				345DA51D1E3A835100D0CA1E /* StatusViewModel.swift in Sources */,
 				34A057B51E3A19C9005DEB6E /* Parsable.swift in Sources */,
 				34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */,
+				345DA5311E3AA14C00D0CA1E /* Secrets.swift in Sources */,
 				345DA5041E3A6C4900D0CA1E /* NewsPostCellViewModel.swift in Sources */,
 				34A057A21E3A1373005DEB6E /* Date+Format.swift in Sources */,
 				345DA4FE1E3A6B2700D0CA1E /* NewsPostsDataSource.swift in Sources */,
