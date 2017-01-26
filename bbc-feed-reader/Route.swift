@@ -42,3 +42,30 @@ internal enum Route {
     }
   }
 }
+
+extension Route {
+  internal static func routeFor(category: NewsCategory) -> Route {
+    switch category {
+    case .topStories:
+      return Route.rssTopStories
+    case .world:
+      return Route.rssWorld
+    case .unitedKingdom:
+      return Route.rssUnitedKingdom
+    case .business:
+      return Route.rssBusiness
+    case .politics:
+      return Route.rssPolitics
+    case .health:
+      return Route.rssHealth
+    case .educationAndFamily:
+      return Route.rssEducationAndFamily
+    case .scienceAndEnvironment:
+      return Route.rssScienceAndEnvironment
+    case .technology:
+      return Route.rssTechnology
+    case .entertainmentAndArts:
+      return Route.rssEntertainmentAndArts
+    }
+  }
+}
