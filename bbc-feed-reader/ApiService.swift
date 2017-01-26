@@ -15,6 +15,13 @@ public class ApiService {
     self.session = URLSession(configuration: config)
   }
   
+  public func fetchNewsPosts(forCategory category: NewsCategory) -> SignalProducer<[NewsPost], BBCError> {
+    let producer: SignalProducer<[NewsPost], BBCError> = self.request(Route.routeFor(category: category))
+    return producer.map { newsPosts in
+      return newsPosts.map { newsPost in newsPost.changed(newsCategory: category) }
+    }
+  }
+  
   /// This params will be passed with every request to API (e.g. auth token)
   private var defaultParams: [String:String] {
     return [:]
