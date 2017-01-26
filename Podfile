@@ -4,5 +4,5 @@ target 'bbc-feed-reader' do
   pod 'AEXML'  
   pod 'SDWebImage', '~>3.8'  
   pod 'ReactiveCocoa', '~> 5.0.0'
-
+  pod 'MagicalRecord'
 end
