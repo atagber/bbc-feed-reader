@@ -27,6 +27,7 @@
 		34A057AD1E3A174D005DEB6E /* NewsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057AC1E3A174D005DEB6E /* NewsCategory.swift */; };
 		34A057AF1E3A183D005DEB6E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057AE1E3A183D005DEB6E /* Method.swift */; };
 		34A057B11E3A1880005DEB6E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057B01E3A1880005DEB6E /* Route.swift */; };
+		34A057B31E3A198B005DEB6E /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057B21E3A198B005DEB6E /* ServerConfig.swift */; };
 		88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		34A057AC1E3A174D005DEB6E /* NewsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategory.swift; sourceTree = "<group>"; };
 		34A057AE1E3A183D005DEB6E /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		34A057B01E3A1880005DEB6E /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		34A057B21E3A198B005DEB6E /* ServerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.debug.xcconfig"; sourceTree = "<group>"; };
 		7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 				34A057661E3A0973005DEB6E /* Parsers */,
 				34A057AE1E3A183D005DEB6E /* Method.swift */,
 				34A057B01E3A1880005DEB6E /* Route.swift */,
+				34A057B21E3A198B005DEB6E /* ServerConfig.swift */,
 			);
 			name = Api;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */,
 				342E56361E38C3D400549A3B /* AppDelegate.swift in Sources */,
 				34A057AB1E3A168A005DEB6E /* Environment.swift in Sources */,
+				34A057B31E3A198B005DEB6E /* ServerConfig.swift in Sources */,
 				34A057961E3A0FDB005DEB6E /* UIView+Binding.swift in Sources */,
 				34A057AD1E3A174D005DEB6E /* NewsCategory.swift in Sources */,
 				34A057A71E3A1619005DEB6E /* Storyboard.swift in Sources */,
