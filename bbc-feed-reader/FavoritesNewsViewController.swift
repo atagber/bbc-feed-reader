@@ -1,6 +1,7 @@
 import UIKit
 
 class FavoritesNewsViewController: UIViewController {
+  fileprivate let viewModel: FavoritesNewsViewModelType = FavoritesNewsViewModel()
   fileprivate weak var newsPostsListViewController: NewsPostsListViewController!
   fileprivate weak var statusViewController: StatusViewController!
   
@@ -19,11 +20,14 @@ class FavoritesNewsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.viewModel.inputs.viewDidLoad()
   }
   
   override func bindViewModel() {
     super.bindViewModel()
-
+    
+    self.viewModel.outputs.currentStatus.forUI().observeValues(self.statusViewController.configureWith(status:))
+    self.viewModel.outputs.newsPosts.forUI().observeValues(self.newsPostsListViewController.configureWith(newsPosts:))
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
