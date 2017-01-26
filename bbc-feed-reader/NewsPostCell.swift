@@ -35,4 +35,6 @@ class NewsPostCell: UITableViewCell {
   internal func configureWith(value: NewsPost) {
     self.viewModel.inputs.configureWith(newsPost: value)
   }
+  
+  internal static let estimatedRowHeight = 440.0
 }
