@@ -63,6 +63,6 @@ class BBCNewsViewController: UIViewController {
 
 extension BBCNewsViewController: NewsCategoriesViewControllerDelegate {
   func newsCategories(viewController: NewsCategoriesViewController, selectedCategory: NewsCategory) {
-    // TODO: implement this method
+    self.viewModel.inputs.tapped(category: selectedCategory)
   }
 }
