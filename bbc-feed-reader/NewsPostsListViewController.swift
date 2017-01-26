@@ -26,7 +26,9 @@ class NewsPostsListViewController: UITableViewController {
   }
   
   public func goTo(newsPost: NewsPost) {
-    // TODO: implement this method
+    let viewController = NewsPostViewController.instantiate(newsPost: newsPost)
+    viewController.delegate = self
+    self.navigationController?.pushViewController(viewController, animated: true)
   }
   
   // MARK: UITableViewDelegate
@@ -39,5 +41,11 @@ class NewsPostsListViewController: UITableViewController {
 extension NewsPostsListViewController {
   func configureWith(newsPosts: [NewsPost]) {
     self.viewModel.inputs.configureWith(newsPosts: newsPosts)
+  }
+}
+
+extension NewsPostsListViewController: NewsPostViewControllerDelegate {
+  func newsPostViewControllerIsGoingBack(_: NewsPostViewController) {
+    _ = self.navigationController?.popViewController(animated: true)
   }
 }
