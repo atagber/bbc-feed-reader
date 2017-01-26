@@ -62,4 +62,16 @@ public class ApiService {
     
     return request
   }
+  
+  private func parse<M: Parsable>(data: Data) -> SignalProducer<[M], BBCError> where M == M.ParsedType {
+    return SignalProducer<Data, NoError>(value: data).map { data in M.parse(data) }
+      .flatMap(.merge) { (parsed: Parsed<[M]>) -> SignalProducer<[M], BBCError> in
+        switch parsed {
+        case let .success(value):
+          return SignalProducer(value: value)
+        case .failure:
+          return SignalProducer(error: BBCError(code: .parsingFailed))
+        }
+    }
+  }
 }
