@@ -8,13 +8,11 @@ class RootTabBarViewController: UITabBarController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.bindViewModel()
 
     self.viewModel.inputs.viewDidLoad();
   }
   
-  func bindViewModel() {
+  override func bindViewModel() {
     self.viewModel.outputs.setViewControllers.observe(on: UIScheduler())
       .observeValues { [weak self] in self?.viewControllers = $0 }
   }
