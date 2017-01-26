@@ -12,6 +12,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--NewsCategoriesViewController-->
+        <scene sceneID="uak-Vo-tk9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewsCategories" referencedIdentifier="NewsCategoriesViewController" id="cQq-Za-P16" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oao-n3-nKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223" y="-670"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="MIK-CC-kKL">
             <objects>
@@ -149,6 +157,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2VB-sN-obQ"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="cQq-Za-P16" kind="embed" id="Ctf-SJ-Kuh"/>
+                                </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-ob-02W" userLabel="Separator">
                                 <rect key="frame" x="0.0" y="64" width="375" height="1"/>
