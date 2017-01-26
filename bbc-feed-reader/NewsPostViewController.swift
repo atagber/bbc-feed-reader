@@ -42,6 +42,7 @@ class NewsPostViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.registerForKeyboardNotifications()
     self.viewModel.inputs.viewDidLoad()
   }
 
@@ -119,5 +120,34 @@ class NewsPostViewController: UIViewController {
                            destructiveHandler: destructiveHandler)
 
     self.present(alertController, animated: true, completion: nil)
+  }
+}
+
+extension NewsPostViewController {
+
+  func registerForKeyboardNotifications() {
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(keyboardWasShown(_:)),
+                                           name: NSNotification.Name.UIKeyboardWillShow,
+                                           object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(keyboardWillBeHidden(_:)),
+                                           name: NSNotification.Name.UIKeyboardWillHide,
+                                           object: nil)
+  }
+
+  @objc func keyboardWasShown(_ notification: Notification) {
+    guard let userInfo = notification.userInfo,
+          let keyboardSize = userInfo[UIKeyboardFrameBeginUserInfoKey] as? CGRect else {
+      return
+    }
+    let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+    scrollView.contentInset = contentInsets
+    scrollView.scrollIndicatorInsets = contentInsets
+  }
+
+  @objc func keyboardWillBeHidden(_ notification: Notification) {
+    scrollView.contentInset = UIEdgeInsets.zero
+    scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
   }
 }
