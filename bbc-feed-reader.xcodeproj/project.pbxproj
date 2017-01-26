@@ -20,6 +20,8 @@
 		345DA4F41E3A534600D0CA1E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F31E3A534600D0CA1E /* Images.swift */; };
 		345DA4F61E3A547E00D0CA1E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F51E3A547E00D0CA1E /* Strings.swift */; };
 		345DA4F81E3A562600D0CA1E /* UIImageView+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */; };
+		345DA4FA1E3A6ACD00D0CA1E /* NewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */; };
+		345DA4FC1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
 		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
@@ -58,6 +60,8 @@
 		345DA4F31E3A534600D0CA1E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		345DA4F51E3A547E00D0CA1E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		345DA4F71E3A562600D0CA1E /* UIImageView+Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Binding.swift"; sourceTree = "<group>"; };
+		345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsList.storyboard; sourceTree = "<group>"; };
+		345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostsListViewController.swift; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		342E564E1E38C91800549A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				345DA4FB1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift */,
 				34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */,
 			);
 			name = Controllers;
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				342E56391E38C3D400549A3B /* Main.storyboard */,
+				345DA4F91E3A6ACD00D0CA1E /* NewsList.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				342E56431E38C3D400549A3B /* LaunchScreen.storyboard in Resources */,
 				342E56401E38C3D400549A3B /* Assets.xcassets in Resources */,
 				342E563B1E38C3D400549A3B /* Main.storyboard in Resources */,
+				345DA4FA1E3A6ACD00D0CA1E /* NewsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +429,7 @@
 				34A0579C1E3A12A3005DEB6E /* Signal+Observing.swift in Sources */,
 				34A057A21E3A1373005DEB6E /* Date+Format.swift in Sources */,
 				345DA4F41E3A534600D0CA1E /* Images.swift in Sources */,
+				345DA4FC1E3A6AFB00D0CA1E /* NewsPostsListViewController.swift in Sources */,
 				34A057AA1E3A168A005DEB6E /* AppEnvironment.swift in Sources */,
 				34A0579A1E3A11BF005DEB6E /* UIViewController+Storyboard.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
