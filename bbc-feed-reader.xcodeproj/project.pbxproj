@@ -14,6 +14,8 @@
 		342E56431E38C3D400549A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342E56411E38C3D400549A3B /* LaunchScreen.storyboard */; };
 		34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */; };
 		34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */; };
+		34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */; };
+		34A057941E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A057921E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift */; };
 		88638FC40DD49E5768EE3041 /* Pods_bbc_feed_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DF77B1981F04F50A1B41 /* Pods_bbc_feed_reader.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		342E56441E38C3D400549A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A057681E3A0A7E005DEB6E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		34A0576A1E3A0C48005DEB6E /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusing.swift"; sourceTree = "<group>"; };
+		34A057921E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Reusing.swift"; sourceTree = "<group>"; };
 		5A3D037BAA47FCD3715DBAA5 /* Pods-bbc-feed-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.debug.xcconfig"; sourceTree = "<group>"; };
 		7F200176DF7C8EFEDB73731C /* Pods-bbc-feed-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbc-feed-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbc-feed-reader/Pods-bbc-feed-reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +160,8 @@
 		34A057641E3A0952005DEB6E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				34A057911E3A0F66005DEB6E /* UITableViewCell+Reusing.swift */,
+				34A057921E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -330,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A057941E3A0F66005DEB6E /* UICollectionViewCell+Reusing.swift in Sources */,
+				34A057931E3A0F66005DEB6E /* UITableViewCell+Reusing.swift in Sources */,
 				342E56361E38C3D400549A3B /* AppDelegate.swift in Sources */,
 				34A057691E3A0A7E005DEB6E /* RootTabBarViewController.swift in Sources */,
 				34A0576B1E3A0C48005DEB6E /* RootViewModel.swift in Sources */,
