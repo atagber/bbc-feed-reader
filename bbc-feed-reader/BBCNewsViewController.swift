@@ -1,6 +1,8 @@
 import UIKit
 
 class BBCNewsViewController: UIViewController {
+  fileprivate let viewModel: BBCNewsViewModelType = BBCNewsViewModel()
+  
   weak var categoriesViewController: NewsCategoriesViewController!
   weak var newsPostsViewController: NewsPostsListViewController!
   weak var statusViewController: StatusViewController!
@@ -16,19 +18,25 @@ class BBCNewsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                             target: self,
+                                                             action: #selector(addButtonTapped))
+    self.viewModel.inputs.viewDidLoad()
   }
   
   override func bindViewModel() {
     super.bindViewModel()
     
-    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
-                                                             target: self,
-                                                             action: #selector(addButtonTapped))
+    self.viewModel.outputs.category.forUI().observeValues(self.categoriesViewController.switchTo(category:))
+    self.viewModel.outputs.categories.forUI().observeValues(self.categoriesViewController.configureWith(categories:))
+    self.viewModel.outputs.newsPosts.forUI().observeValues(self.newsPostsViewController.configureWith(newsPosts:))
+    self.viewModel.outputs.currentStatus.forUI().observeValues(self.statusViewController.configureWith(status:))
+    self.viewModel.outputs.showNewsPost.forUI().observeValues(self.newsPostsViewController.goTo(newsPost:))
   }
   
   @objc private func addButtonTapped() {
-    // TODO: implement this method
+    self.viewModel.inputs.addButtonTapped()
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
