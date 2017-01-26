@@ -5,12 +5,17 @@ import ReactiveSwift
 class NewsCategoryCell: UICollectionViewCell {
   fileprivate let viewModel: NewsCategoryCellViewModelType = NewsCategoryCellViewModel()
   
+  // it needs to determine cell width
+  static let categoryNameFont = UIFont(name: "HelveticaNeue", size: 17.0)!
+  static let defaultHeight = 44.0
+  
   @IBOutlet weak var newsCategoryNameLabel: UILabel!
   @IBOutlet weak var selectionIndicatorView: UIView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
     
+    self.newsCategoryNameLabel.font = NewsCategoryCell.categoryNameFont
   }
   
   override func bindViewModel() {
