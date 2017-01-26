@@ -118,7 +118,6 @@
 		342E564A1E38C3FA00549A3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				342E563C1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld */,
 				342E56441E38C3D400549A3B /* Info.plist */,
 				342E56411E38C3D400549A3B /* LaunchScreen.storyboard */,
 				342E563F1E38C3D400549A3B /* Assets.xcassets */,
@@ -216,6 +215,7 @@
 		34A057651E3A095C005DEB6E /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				342E563C1E38C3D400549A3B /* bbc_feed_reader.xcdatamodeld */,
 			);
 			name = Storage;
 			sourceTree = "<group>";
